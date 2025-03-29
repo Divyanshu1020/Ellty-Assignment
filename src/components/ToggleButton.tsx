@@ -17,8 +17,8 @@ const ToggleButton: React.FC<ToggleButtonProps> = ({ label, checked, onClick }) 
         {label}
       </span>
       <div
-        className={`w-[25px] h-[25px] rounded-[6px] flex items-center justify-center border ${
-          checked ? "bg-[#5087F8] hover:bg-[#2469F6] border-none" : "border-[#CDCDCD] hover:border-[#BDBDBD]"
+        className={`w-[25px] h-[25px] rounded-[6px] flex items-center justify-center border active:shadow-[-2px_-2px_2px_0px_#DCDDDE,2px_2px_2px_0px_#DCDDDE,-2px_2px_2px_0px_#DCDDDE,2px_-2px_2px_0px_#DCDDDE] ${
+          checked ? "bg-[#5087F8] hover:bg-[#2469F6] border-none" : "border-[#CDCDCD] hover:border-[#BDBDBD] "
         }`}
       >
         {checked ? (
